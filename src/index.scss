@@ -1,2 +1,69 @@
-// global styles go in here. 
-// When you start writing styles for your individual components you'll have to start importing them
+//colors
+$white: #fff;
+$color_mountain_mist_approx: #999;
+$color_alto_approx: #ddd;
+
+//fonts
+$font_0: Century Gothic;
+$font_1: Futura;
+$font_2: sans-serif;
+
+.header {
+	padding: 10px;
+	font-size: 16px;
+	margin: 100px;
+	background-color: #0066FF;
+	color: #FFF;
+	border: 2px solid #0066FF;
+  }
+
+body {
+	font: 14px $font_0, $font_1, $font_2;
+	margin: 20px;
+	padding: 50px;
+	background-color: #796CFF;
+    font-family: sans-serif;
+	
+}
+
+ol {
+	padding-left: 30px;
+}
+ul {
+	padding-left: 30px;
+}
+.status {
+	margin-bottom: 10px;
+}
+.square {
+	background: $white;
+	border: 1px solid $color_mountain_mist_approx;
+	float: left;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 34px;
+	height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 34px;
+	&:focus {
+		outline: none;
+	}
+}
+.game {
+	display: flex;
+	flex-direction: row;
+}
+.game-info {
+	margin-left: 20px;
+}
+.board-row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.kbd-navigation .square:focus {
+	background: $color_alto_approx;
+}
